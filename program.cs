@@ -109,6 +109,14 @@ namespace HelloApp{
 			b2.name = "Peace";
 			Console.WriteLine(b1.name); 
 			Console.WriteLine(b1.author.name); 
+			// Работа с шаблонами класса
+			Account<string, double> acc1 = new Account<string, double>("PI-2345", 75.5);
+			string acc1Id = acc1.getId();
+			Console.WriteLine(acc1Id);
+			Account<int, int> acc2 = new Account<int, int>(2345, 50);
+			int acc2Id = acc2.getId();
+			Console.WriteLine(acc2Id);
+		
 			Console.ReadKey();
 		}
 		
