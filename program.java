@@ -91,7 +91,7 @@ public class program{
 		Account<String, Double> acc1 = new Account<String, Double>("PI-2345", 75.5);
 		 String acc1Id = acc1.getId();
         System.out.println(acc1Id);
-		Account<Integer, Integer> acc2 = new Account<Integer, Integer>(2345, 50);
+		Account<Integer, Integer> acc2 = new Account<Integer, Integer>(2345, 40);
         Integer acc2Id = acc2.getId();
         System.out.println(acc2Id);
 	 } 

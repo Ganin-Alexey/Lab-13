@@ -110,13 +110,17 @@ namespace HelloApp{
 			Console.WriteLine(b1.name); 
 			Console.WriteLine(b1.author.name); 
 			// Работа с шаблонами класса
-			Account<string, double> acc1 = new Account<string, double>("PI-2345", 75.5);
+			Account<string> acc1 = new Account<string>("PI-2345", 75.5);
 			string acc1Id = acc1.getId();
 			Console.WriteLine(acc1Id);
-			Account<int, int> acc2 = new Account<int, int>(2345, 50);
+			Account<int> acc2 = new Account<int>(2345, 50);
 			int acc2Id = acc2.getId();
 			Console.WriteLine(acc2Id);
-		
+			
+			// Работа с делегатом
+			acc2.Print_MyRating();
+			acc1.Print_MyRating();
+			
 			Console.ReadKey();
 		}
 		
